@@ -1,4 +1,4 @@
-import { Customer } from './src/customer_account.js';
+import { Customer } from './customer_account.js';
 
 export class ATM
 {
@@ -17,15 +17,15 @@ export class ATM
 
   login(userId, password)
   {
-    for(int i = 0; i < this.users.length; i++)
+    for(let i = 0; i < this.users.length; i++)
 		{
 			if(this.users[i].getUserId() == userId)
 			{
-				correctPassword = password == this.users[i].getPassword();
+				let correctPassword = password == this.users[i].getPassword();
 
 				if(correctPassword)
 				{
-					this.setCurrentUser(users[i]);
+					this.setCurrentUser(this.users[i]);
 				}
 
 				return correctPassword;

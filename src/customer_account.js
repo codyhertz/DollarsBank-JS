@@ -4,7 +4,7 @@ export class Customer
   {
     this.name = name;
     this.address = address;
-    this.nmber = number;
+    this.number = number;
     this.userId = userId;
     this.password = password;
     this.checking = initialDeposit;
@@ -148,19 +148,19 @@ export class Customer
   {
     if(this.transactions.length > 5)
 		{
-			for(int i = 0; i < 5; i++)
+			for(let i = 0; i < 5; i++)
 			{
 				console.log(this.transactions.get(i));
 			}
-			checkBalance();
+			this.checkBalance();
 		}
 		else
 		{
-			for(int i = 0; i < this.transactions.length; i++)
+			for(let i = 0; i < this.transactions.length; i++)
 			{
 				console.log(this.transactions[i]);
 			}
-			checkBalance();
+			this.checkBalance();
 		}
   }
 
