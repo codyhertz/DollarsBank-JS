@@ -85,7 +85,7 @@ export class ATM
   {
     if(this.currentUser != null)
     {
-      this.currentUser.withdrawlUserChecking(amount);
+      this.currentUser.withdrawlChecking(amount);
     }
   }
 
@@ -93,7 +93,7 @@ export class ATM
   {
     if(this.currentUser != null)
     {
-      this.currentUser.withdrawlUserSavings(amount);
+      this.currentUser.withdrawlSavings(amount);
     }
   }
 

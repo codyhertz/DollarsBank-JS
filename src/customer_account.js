@@ -20,14 +20,14 @@ export class Customer
 
   depositChecking(amount)
   {
-    thic.checking = this.checking + amount;
+    this.checking = this.checking + amount;
     let transaction = this.name + " deposited $" + amount + " into their checking account.";
     this.transactions.push(transaction);
   }
 
   depositSavings(amount)
   {
-    thic.savings = this.savings + amount;
+    this.savings = this.savings + amount;
     let transaction = this.name + " deposited $" + amount + " into their savings account.";
     this.transactions.push(transaction);
   }
@@ -150,7 +150,7 @@ export class Customer
 		{
 			for(let i = 0; i < 5; i++)
 			{
-				console.log(this.transactions.get(i));
+				console.log(this.transactions[i]);
 			}
 			this.checkBalance();
 		}
